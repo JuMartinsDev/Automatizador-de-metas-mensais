@@ -23,7 +23,7 @@ for mes in lista_meses:
 
         # Caso maior, envia SMS para número de celular como nome, mês e vendas do vendedor
         message = client.messages.create(
-            to="+5511950305800",
-            from_="+14157636567",
+            to="+5511... - inserir seu número de telefone",
+            from_="+..... - inserir código do twilio",
             body=f"No mês {mes} alguém bateu a meta. Vendedor: {vendedor}, Vendas: {vendas}")
         print(message.sid)
